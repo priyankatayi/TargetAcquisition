@@ -26,10 +26,10 @@ As part of this project, I have developed an application in Angular with below f
 - An alert message is displayed if there is no target data available for viewing.
 
 **4. Delete a target**:
-- When clicked on delete, that particular target entree is deleted from server. Output property is used to raise a event in child component to let the parent component know that data has been deleted and to update the view* (Parent Component: ListTargetsComponent, Child Component: ViewTargetsComponent).*
+- When clicked on delete, that particular target entree is deleted from server. Output property is used to raise a event in child component to let the parent component know that data has been deleted and to update the view *(Parent Component: ListTargetsComponent, Child Component: ViewTargetsComponent).*
 
 **4. Unit and Integration tests**:
-- Developed a unit test to test the custom pipe* (DollarPipe ).*
+- Developed a unit test to test the custom pipe *(DollarPipe ).*
 - Developed a integration test to test the template with mock data 
 *(ViewTargetsComponent ).*
 
