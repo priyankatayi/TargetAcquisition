@@ -5,8 +5,8 @@
 - Install NPM and Node
 - Install Angular CLI: `npm install -g @angular/cli`
 - Install `$ npm install -g json-server` and ` run json-server --watch db.json`
-- Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. 
-- Run `ng test` to execute the tests via [Karma](https://karma-   runner.github.io).
+- Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`
+- Run `ng test` to execute the tests
 
 ### Funtionality:
 
