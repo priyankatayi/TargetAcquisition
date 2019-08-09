@@ -1,2 +1,19 @@
 # TargetAcquisition
-Developed a prototype that will allow the client to track and analyze potential target companies by performing the following activities: • View a list of targets • Edit an existing target • Create a new target • Delete a target
+
+This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.2.0.
+
+## JSON server
+
+Install `$ npm install -g json-server` and ` run json-server --watch db.json`
+
+## Development server
+
+Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+
+## Running unit tests
+
+Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+
+## Further help
+
+To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).

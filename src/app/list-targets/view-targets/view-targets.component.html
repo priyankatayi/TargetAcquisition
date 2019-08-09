@@ -1,0 +1,80 @@
+<div *ngFor="let data of targetData" class="panel panel-primary centerAlign pointerCursor verticalAlign">
+    <div class="panel-heading">
+        <h3 class="panel-title">{{data.name | uppercase}}</h3>
+    </div>
+    <div class="panel-body">
+        <div class="col-xs-12">
+            <div class="row">
+                <div class="col-xs-12">
+                    <div class="row">
+                        <div class="col-xs-4">
+                            Name:
+                        </div>
+                        <div class="col-xs-8">
+                            {{data.name | uppercase}}
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xs-4">
+                            Description:
+                        </div>
+                        <div class="col-xs-8">
+                            {{data.description}}
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xs-4">
+                            Key Contact:
+                        </div>
+                        <div class="col-xs-8">
+                            {{data.keyContact}}
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xs-4">
+                            Contact Number:
+                        </div>
+                        <div class="col-xs-8">
+                            {{data.phoneNumber}}
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xs-4">
+                            Email:
+                        </div>
+                        <div class="col-xs-8">
+                            {{data.email}}
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xs-4">
+                            Revenue:
+                        </div>
+                        <div class="col-xs-8">
+                            {{data.revenue | dollarPipe }}
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xs-4">
+                            Status:
+                        </div>
+                        <div class="col-xs-8" [ngSwitch]="data.status">
+                            <span *ngSwitchCase="1">Open</span>
+                            <span *ngSwitchCase="2">Researching</span>
+                            <span *ngSwitchCase="3">Closed</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="panel-footer">
+        <div class="row">
+           <div class="col-md-1">
+                <button class="btn btn-primary" (click)="editTarget(data.id)">Edit</button>
+            </div>
+            <div class="col-md-1"> <button class="btn btn-danger" (click)="deleteTarget(data.id)">Delete</button>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,8 @@
+<body *ngIf="targetData?.length !== 0" class="bodyPadding">
+    <app-view-targets [targetData]="targetData" (deletedTarget)= "deletedTarget($event)"></app-view-targets>
+</body>
+<!-- displays a message when there is no target data avilable -->
+<div *ngIf="targetData?.length === 0" class="alert alert-warning fade in">
+        <a href="#" class="close" data-dismiss="alert">&times;</a>
+        <strong>Oops!</strong> {{errorMsg}}
+    </div>

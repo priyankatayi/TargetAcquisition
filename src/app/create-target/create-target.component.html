@@ -1,0 +1,71 @@
+<form #targetForm="ngForm" (ngSubmit)="saveTarget();">
+    <div class="panel panel-primary" *ngIf="target">
+        <div class="panel-heading">
+            <h3 class="panel-title">{{panelTitle}}</h3>
+        </div>
+        <div class="panel-body">
+            <div class="form-group" [class.has-error]="nameControl.invalid && nameControl.touched">
+                <label for="name" class="control-label">Company Name:</label>
+                <input required type="text" name="name" [(ngModel)]="target.name" id="name" class="form-control"
+                    #nameControl="ngModel">
+                <span class="help-block" *ngIf="nameControl.invalid  && nameControl.touched">
+                    Name is required
+                </span>
+            </div>
+            <div class="form-group" [class.has-error]="descriptionControl.invalid && descriptionControl.touched">
+                <label for="name" class="control-label">Description:</label>
+                <textarea required name="description" [(ngModel)]="target.description" id="description"
+                    class="form-control" #descriptionControl="ngModel"></textarea>
+                <span class="help-block" *ngIf="descriptionControl.invalid  && descriptionControl.touched">
+                    Description is required
+                </span>
+            </div>
+            <div class="form-group" [class.has-error]="keyContactControl.invalid && keyContactControl.touched">
+                <label for="keyContact" class="control-label">Key Contact:</label>
+                <input required type="text" name="keyContact" [(ngModel)]="target.keyContact" id="keyContact"
+                    class="form-control" #keyContactControl="ngModel">
+                <span class="help-block" *ngIf="keyContactControl.invalid  && keyContactControl.touched">
+                    Key Contact is required
+                </span>
+            </div>
+            <div class="form-group" [class.has-error]="emailControl.invalid && emailControl.touched">
+                <label for="email" class="control-label">Email:</label>
+                <input required type="email" [email]="true" name="email" [(ngModel)]="target.email" id="email"
+                    class="form-control" #emailControl="ngModel">
+                <span class="help-block"
+                    *ngIf="emailControl.invalid  && emailControl.touched">
+                    Email is invalid
+                </span>
+            </div>
+            <div class="form-group" [class.has-error]="contactControl.invalid && contactControl.touched">
+                <label for="contact" class="control-label">Phone Number:</label>
+                <input required type="text" name="contact" [(ngModel)]="target.phoneNumber" id="contact"
+                    class="form-control" #contactControl="ngModel">
+                <span class="help-block"
+                    *ngIf="contactControl.invalid  && contactControl.touched">
+                    Phone Number is required
+                </span>
+            </div>
+            <div class="form-group" [class.has-error]="revenueControl.invalid && revenueControl.touched">
+                <label for="revenue" class="control-label">Revenue</label>
+                <input required type="text" name="revenue" [(ngModel)]="target.revenue" id="revenue"
+                    class="form-control" #revenueControl="ngModel">
+                <span class="help-block"
+                    *ngIf="revenueControl.invalid  && revenueControl.touched">
+                    Revenue is required
+                </span>
+            </div>
+            <div class="form-group">
+                <label for="status  control-label">
+                    Status:
+                </label>
+                <select class="form-control" id="status" name="status" [(ngModel)]="target.status" #status="ngModel">
+                    <option *ngFor="let code of statusValues" [value]="code.id">{{code.name}}</option>
+                </select>
+            </div>
+        </div>
+        <div class="panel-footer">
+            <button type="Submit" class="btn btn-primary" [disabled]="targetForm.invalid">Save</button>
+        </div>
+    </div>
+</form>

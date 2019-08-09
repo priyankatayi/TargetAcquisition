@@ -1,0 +1,53 @@
+.navbar-custom{
+    background-color: cornflowerblue !important;
+    border:none !important;    
+}
+
+.navbar-custom .navbar-nav>li>a {
+    color: #ffffff;
+}
+
+a:hover, a:visited, a:focus {
+    text-decoration: none;
+    background-color: transparent !important;
+}
+
+a:focus{
+    background-color:gray !important;
+    margin:2px !important
+}
+
+.verticalAlign{
+    display:flex;
+    align-items: center;
+}
+
+.bodyPadding{   
+    padding-left:80px;
+}
+.verticalAlign{   
+    display: inline-block;    
+}
+.centerAlign{ 
+    
+    width: 50%;
+    margin-bottom: 20px;  
+    margin-right:20px; 
+    align-items: center;   
+}
+.panel-heading {
+    background-color:cornflowerblue !important;
+    border-color:cornflowerblue !important;
+}
+.pointerCursor{
+    cursor: pointer;
+}
+
+.btn-primary{
+    background-color:cornflowerblue !important;
+    border-color:cornflowerblue !important;
+}
+
+form {
+    width:30%;
+}
