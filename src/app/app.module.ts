@@ -13,7 +13,8 @@ import { DollarPipe } from './pipes/dollar.pipe';
 const appRoutes: Routes = [
   {path: 'list', component : ListTargetsComponent},
   {path: 'edit/:id', component: CreateTargetComponent},
-  {path: 'create', component: CreateTargetComponent}
+  {path: 'create', component: CreateTargetComponent},
+  {path: '', redirectTo: '/list', pathMatch: 'full'}
 ];
 
 @NgModule({
