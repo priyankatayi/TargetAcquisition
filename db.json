@@ -8,7 +8,7 @@
       "keyContact": "Avin",
       "phoneNumber": 1234567891,
       "email": "avin@walmart.com",
-      "revenue":	"US$514.4 billion"
+      "revenue":	"514.4 billion increase"
     },
     {
       "id": 2,
@@ -18,7 +18,7 @@
       "keyContact": "Max",
       "phoneNumber": 1234567891,
       "email": "max@target.com",
-      "revenue":	"US$75.356 billion"
+      "revenue":	"75.356 billion Decrease"
     },
     {
       "id": 3,
@@ -28,7 +28,7 @@
       "keyContact": "Kate",
       "phoneNumber": 1234567891,
       "email": "kate@Kroger.com",
-      "revenue":	"US$121.16 billion"
+      "revenue":	"121.16 billion"
     }
   ]
 }
