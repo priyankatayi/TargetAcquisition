@@ -1,11 +1,14 @@
 # Application : Target Acquisition
 
 ### Steps to run the project:
-- git clone https://github.com/priyankatayi/TargetAcquisition.git
+- Git clone https://github.com/priyankatayi/TargetAcquisition.git
 - Install NPM and Node
+- Navigate to `TargetAcquisition` folder
+- Run `npm install`
 - Install Angular CLI: `npm install -g @angular/cli`
-- Install `$ npm install -g json-server` and ` run json-server --watch db.json`
-- Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`
+- Open a terminal tab, navigate to  `TargetAcquisition` folder and install `npm install -g json-server`
+- Run `json-server --watch db.json`
+- In another terminal tab, navigate to  `TargetAcquisition` folder and run `ng serve -o` for a dev server
 - Run `ng test` to execute the tests
 
 ### Funtionality:
